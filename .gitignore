@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build & Rust target artifacts
+dist/
+src-tauri/target/
+.cargo/
+*.tsbuildinfo
+
+# Compiled binaries & installers
+*.exe
+*.dll
+*.msi
+*.pdb
+
+# Environment, local databases & test outputs
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.log
+test-results.json
+test-results.xml
+
+# AI / editor / OS scratch
+.agents/
+.vscode/
+.idea/
+claude --resume *.txt
+nul
+Thumbs.db
+.DS_Store

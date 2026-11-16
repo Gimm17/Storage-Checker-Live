@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #0B0E14;
+  --color-surface: #141923;
+  --color-surface-hover: #1E2533;
+  --color-surface-border: #1F2937;
+  --color-surface-border-subtle: #2D3748;
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #9CA3AF;
+  --color-safe: #10B981;
+  --color-caution: #F59E0B;
+  --color-danger: #EF4444;
+  --color-brand: #3B82F6;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+}
+
+/* Custom Scrollbars for High-Craft Dark Obsidian theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0E14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3748;
+}
+
+/* Utility badge classes matching PRD § 9 */
+.badge-safe {
+  color: #10B981;
+  background-color: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.badge-caution {
+  color: #F59E0B;
+  background-color: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.badge-danger {
+  color: #EF4444;
+  background-color: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
